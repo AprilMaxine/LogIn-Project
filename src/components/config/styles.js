@@ -26,7 +26,7 @@ const globalstyles = {
     alignSelf: "center",
   },
   button: {
-    marginTop: 10,
+    marginTop: 30,
     width: "100%",
   },
   separator: {

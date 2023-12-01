@@ -46,10 +46,10 @@ export default function RegisterForm({ navigation }) {
       />
   
       <Button
-        onPress={() => navigation.navigate("Login")} // Navigate to the LoginScreen
+        onPress={() => navigation.navigate("Login")}
         mode="contained"
-        style={{ marginTop: 10, backgroundColor: "#3498db" }} // Set the background color to #3498db
-        labelStyle={{ color: "white" }} // Set the text color to white
+        style={{ marginTop: 10, backgroundColor: "#3498db" }}
+        labelStyle={{ color: "white" }}
         
         >
       Register
@@ -59,8 +59,8 @@ export default function RegisterForm({ navigation }) {
         onPress={() => navigation.pop()}
         icon="arrow-left"
         mode="contained"
-        style={{ marginTop: 10, backgroundColor: "#3498db" }} // Set the background color to #3498db
-        labelStyle={{ color: "white" }} // Set the text color to white
+        style={{ marginTop: 10, backgroundColor: "#3498db" }} 
+        labelStyle={{ color: "white" }}
       >
         Back
       </Button>

@@ -18,7 +18,7 @@ export default function LoginForm({ navigation }) {
         mode="outlined"
         placeholder="Email"
         label="Email"
-        style={{ marginTop: 10 }}
+        style={{ marginTop: 20 }}
         value={email}
         onChangeText={(text) => setEmail(text)}
       />
@@ -32,21 +32,27 @@ export default function LoginForm({ navigation }) {
         onChangeText={(text) => setPassword(text)}
       />
 
+      <Text
+        onPress={() => navigation.navigate("Recover")}
+        style={{ marginTop: 10, color: "#3498db", textDecorationLine: 'underline', alignSelf: 'flex-end', }}
+      >
+        Forgot Password
+      </Text>
       <Button
         onPress={() => navigation.navigate("Home")}
         mode="contained"
-        style={{ marginTop: 10, backgroundColor: "#3498db" }}
+        style={{ marginTop: 25, backgroundColor: "#3498db" }}
         labelStyle={{ color: "white" }}
       >
         Login
       </Button>
       <Button
-        onPress={() => navigation.navigate("Recover")}
+        onPress={() => navigation.navigate("Register")}
         mode="contained"
         style={{ marginTop: 10, backgroundColor: "#3498db" }}
         labelStyle={{ color: "white" }}
       >
-        Forgot Password
+        Register Account
       </Button>
       <Button
         onPress={() => navigation.pop()}
